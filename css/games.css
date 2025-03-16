@@ -1,0 +1,229 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #ffcc00, #ff5733);
+    color: #fff;
+    text-align: center;
+}
+
+/* Barra de Navegação */
+.navbar {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.nav-logo {
+    color: #ffcc00;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.nav-menu li a:hover {
+    color: #ffcc00;
+}
+
+/* Seção de Jogos */
+.games-section {
+    padding: 100px 20px 50px;
+    height: 80vh;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.games-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.game-card {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
+
+.game-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.game-card h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.play-button {
+    display: inline-block;
+    background: #ff5733;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background 0.3s;
+}
+
+.play-button:hover {
+    background: #e64a19;
+}
+
+/* Rodapé */
+.footer {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+
+/* Estilização do rodapé */
+footer {
+    background-color: #282828; /* Ajuste a cor de fundo para combinar com o site */
+    color: #f4f4f4; /* Texto mais claro para contraste */
+    padding: 20px 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #ffcc00; /* Cor do título para combinar com a temática Pokémon */
+}
+
+.footer-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.footer-social {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-social h4 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #ffcc00;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+    filter: invert(80%); /* Faz com que os ícones combinem com o fundo escuro */
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.1);
+    filter: invert(50%); /* Efeito de hover nos ícones, destaque com o hover */
+}
+
+.footer-links {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-links h4 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #ffcc00;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #f4f4f4;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #ffcc00; /* Cor de destaque ao passar o mouse */
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    font-size: 0.9rem;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    color: #ccc;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
